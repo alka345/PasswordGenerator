@@ -1,3 +1,4 @@
+
 import { useState,useCallback,useEffect,useRef } from 'react'
 
 
@@ -38,15 +39,20 @@ useEffect(()=>{
 },[length,numberAllowed,charAllowed ,passwordGenerator])
 
 return (
-  
-<div className='w-full max-w-md mx-auto q shadow-md rounded-lg px-4 py-5 my-7 text-orange-500 bg-gray-800'>
-  <h1 className='text-white text-center my-5'>Password Generator</h1>
+  <div className='w-full h-screen flex flex-wrap justify-center items-center  py-5 '
+
+ >
+<div className=' max-w-md mx-auto  shadow-md rounded-lg px-4 py-5 my-7 mt-   10 text-black font-medium  bg-slate-600 '
+
+>
+  <h1 className='text-black text-center my-5'>Password Generator</h1>
   <div className='flex shadow rounded-lg overflow-hidden mb-4'>
 <input
 type="text"
 value={password}
 className='outline-none w-full py-1 px-3'
-placeholder='Password'
+placeholde
+r='Password'
 readOnly
 ref={passwordRef}
 />
@@ -93,9 +99,11 @@ className='outline-none  bg-blue-700 text-white px-3 py-0.5 shrink-0'>copy</butt
     </div>
 </div>
 </div>
-
+</div>
     
   )
 }
 
 export default App
+
+
